@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/3-column-preview-card-component-main/static/css/main.e332e9af.chunk.css",
+    "main.js": "/3-column-preview-card-component-main/static/js/main.a5db99ac.chunk.js",
+    "main.js.map": "/3-column-preview-card-component-main/static/js/main.a5db99ac.chunk.js.map",
+    "runtime-main.js": "/3-column-preview-card-component-main/static/js/runtime-main.4dfef56f.js",
+    "runtime-main.js.map": "/3-column-preview-card-component-main/static/js/runtime-main.4dfef56f.js.map",
+    "static/js/2.73d51de1.chunk.js": "/3-column-preview-card-component-main/static/js/2.73d51de1.chunk.js",
+    "static/js/2.73d51de1.chunk.js.map": "/3-column-preview-card-component-main/static/js/2.73d51de1.chunk.js.map",
+    "static/js/3.677f0826.chunk.js": "/3-column-preview-card-component-main/static/js/3.677f0826.chunk.js",
+    "static/js/3.677f0826.chunk.js.map": "/3-column-preview-card-component-main/static/js/3.677f0826.chunk.js.map",
+    "index.html": "/3-column-preview-card-component-main/index.html",
+    "static/css/main.e332e9af.chunk.css.map": "/3-column-preview-card-component-main/static/css/main.e332e9af.chunk.css.map",
+    "static/js/2.73d51de1.chunk.js.LICENSE.txt": "/3-column-preview-card-component-main/static/js/2.73d51de1.chunk.js.LICENSE.txt",
+    "static/media/icon-luxury.7d6e1aef.svg": "/3-column-preview-card-component-main/static/media/icon-luxury.7d6e1aef.svg",
+    "static/media/icon-sedans.e7945028.svg": "/3-column-preview-card-component-main/static/media/icon-sedans.e7945028.svg",
+    "static/media/icon-suvs.058b664c.svg": "/3-column-preview-card-component-main/static/media/icon-suvs.058b664c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4dfef56f.js",
+    "static/js/2.73d51de1.chunk.js",
+    "static/css/main.e332e9af.chunk.css",
+    "static/js/main.a5db99ac.chunk.js"
+  ]
+}
