@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+/** 
+* @author: Alexander Chi
+* @description:
+* @date: 01/Septiembre/2021
+**/ 
+@import './assets/scss/colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+$font-stack: 'Lexend Deca', 'Big Shoulders Display', sans-serif;
+$borderRadius: 10px;
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: $veryLightGray;
+  font: {
+    family: $font-stack;
+  };
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content {
+  display: flex; 
+  border-radius: 10px;
+  width: 80%;
+  color: $veryLightGray;
+  box-shadow: 0px 0px 30px 0px hsla(0, 0, 0, 0.5);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card>h2 {
+  text-transform: uppercase;
+  font: {
+    family: 'Big Shoulders Display', sans-serif;;
+  };
+}
+
+.card>div, 
+.card>h2,
+.card>p,
+.card>span,
+.card>span>img {
+ background-color: transparent;
+}
+
+.card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 30px; 
 }
 
-.App-link {
-  color: #61dafb;
+.card.card__orange {
+  background-color: $brightOrange; 
+  border-bottom-left-radius: $borderRadius;
+  border-top-left-radius: $borderRadius;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card.card__cyan {
+  background-color: $darkCyan;
+}
+
+.card.card__dark__cyan {
+  background-color: $veryDarkCyan;
+  border-bottom-right-radius: $borderRadius;
+  border-top-right-radius: $borderRadius;
+}
+
+span.card__icon, 
+h2.card__title,
+p.card__description {
+  margin-bottom: 20px;
+}
+
+p.card__description  {
+  height: 115px;
+  font-size: 15px;
+  color: $transparentWhite;
+}
+
+div.card__footer {
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+button.btn {
+  cursor: pointer;
+  background-color: $veryLightGray;
+  border: 2px solid $veryLightGray;
+  border-radius: 30px;
+  padding: 10px 20px 10px 20px;
+  font-weight: bold;
+}
+
+button.btn.btn__orange {
+  color: $brightOrange;  
+}
+
+button.btn.btn__cyan {
+  color: $darkCyan;
+}
+
+button.btn.btn__dark__cyan {
+  color: $veryDarkCyan; 
+}
+
+button.btn:hover {
+  color: $veryLightGray;
+  border: 2px solid $veryLightGray;
+  background-color: transparent;
+  font-weight: unset;
+}
+
+@media (min-width: 1440px) and (max-width: 3000px) { 
+  .content {
+    width: 999px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width: 0px) and (max-width: 600px) { 
+  .container {
+    width: auto;
+    height: auto;
+    padding: {
+      top: 30px;
+      bottom: 30px;
+    };
+  }
+
+  .content {
+    flex-direction: column; 
+  }
+  .card.card__orange {
+    border-top-left-radius: $borderRadius;
+    border-top-right-radius: $borderRadius; 
+    border-bottom-left-radius: 0px; 
+  } 
+  
+  .card.card__dark__cyan { 
+    border-bottom-right-radius: $borderRadius;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: $borderRadius;
   }
 }

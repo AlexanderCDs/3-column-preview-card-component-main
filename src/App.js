@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+/** 
+* @author: Alexander Chi
+* @description:
+* @date: 01/Septiembre/2021
+**/ 
 import './App.scss';
+import {Card} from './components/cards';
+import {cards} from './utils/information'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          3 Column Preview Card Component Main
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+       <div className="content">
+          {cards.map((card, index) => {
+            return(
+              <Card 
+                key={`card-${index}`}
+                color={card.color}
+                icon={card.icon}
+                title={card.title} 
+                description={card.description} 
+                butons={card.butons} />
+            )
+          })}
+       </div>
     </div>
   );
 }
