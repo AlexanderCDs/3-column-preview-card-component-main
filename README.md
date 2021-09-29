@@ -10,7 +10,7 @@
 
 
 ## Demo
-Here is a working live demo :  https://alexandercds.github.io/3-column-preview-card-component-main/
+Here is a working live demo: [here](https://alexandercds.github.io/3-column-preview-card-component-main/)
 
 ### Bug / Feature Request
 
